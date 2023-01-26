@@ -224,6 +224,7 @@ $ curl -X GET 'http://username:password@localhost:3000/scim/v2/Users/1'
 The create request can receive any SCIM compliant JSON but can only be parsed with the configuration schema provided. What that means is that if your app receives a request to modify an attribute that is not listed in your `mutable_user_attributes` configuration it will ignore the parameter. In addition to needing to be included in the mutable attributes it also requires `mutable_user_attributes_schema` which defines where the Gem should look for a given attribute.
 
 **Do not include attributes that you do not want modified** such as `id`. Any attributes can be provided in the `user_schema` configuration to be returned as part of the response but if they are not part of the `mutable_user_attributes_schema` then they cannot be modified.
+Constant attributes can be provided in the `constant_user_attributes`
 
 Sample request:
 

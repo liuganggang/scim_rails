@@ -24,6 +24,7 @@ module ScimRails
       :basic_auth_model_authenticatable_attribute,
       :basic_auth_model_searchable_attribute,
       :mutable_user_attributes,
+      :constant_user_attributes,
       :on_error,
       :queryable_user_attributes,
       :scim_users_list_order,
